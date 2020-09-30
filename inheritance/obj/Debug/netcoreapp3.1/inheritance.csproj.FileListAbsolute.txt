@@ -1,0 +1,13 @@
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\inheritance\bin\Debug\netcoreapp3.1\inheritance.exe
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\inheritance\bin\Debug\netcoreapp3.1\inheritance.deps.json
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\inheritance\bin\Debug\netcoreapp3.1\inheritance.runtimeconfig.json
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\inheritance\bin\Debug\netcoreapp3.1\inheritance.runtimeconfig.dev.json
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\inheritance\bin\Debug\netcoreapp3.1\inheritance.dll
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\inheritance\bin\Debug\netcoreapp3.1\inheritance.pdb
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\inheritance\obj\Debug\netcoreapp3.1\inheritance.csprojAssemblyReference.cache
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\inheritance\obj\Debug\netcoreapp3.1\inheritance.AssemblyInfoInputs.cache
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\inheritance\obj\Debug\netcoreapp3.1\inheritance.AssemblyInfo.cs
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\inheritance\obj\Debug\netcoreapp3.1\inheritance.csproj.CoreCompileInputs.cache
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\inheritance\obj\Debug\netcoreapp3.1\inheritance.dll
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\inheritance\obj\Debug\netcoreapp3.1\inheritance.pdb
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\inheritance\obj\Debug\netcoreapp3.1\inheritance.genruntimeconfig.cache
