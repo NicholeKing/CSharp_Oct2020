@@ -1,0 +1,13 @@
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\CSharp_Oct2020_GitHub\interfaces\bin\Debug\netcoreapp3.1\interfaces.exe
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\CSharp_Oct2020_GitHub\interfaces\bin\Debug\netcoreapp3.1\interfaces.deps.json
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\CSharp_Oct2020_GitHub\interfaces\bin\Debug\netcoreapp3.1\interfaces.runtimeconfig.json
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\CSharp_Oct2020_GitHub\interfaces\bin\Debug\netcoreapp3.1\interfaces.runtimeconfig.dev.json
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\CSharp_Oct2020_GitHub\interfaces\bin\Debug\netcoreapp3.1\interfaces.dll
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\CSharp_Oct2020_GitHub\interfaces\bin\Debug\netcoreapp3.1\interfaces.pdb
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\CSharp_Oct2020_GitHub\interfaces\obj\Debug\netcoreapp3.1\interfaces.csprojAssemblyReference.cache
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\CSharp_Oct2020_GitHub\interfaces\obj\Debug\netcoreapp3.1\interfaces.AssemblyInfoInputs.cache
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\CSharp_Oct2020_GitHub\interfaces\obj\Debug\netcoreapp3.1\interfaces.AssemblyInfo.cs
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\CSharp_Oct2020_GitHub\interfaces\obj\Debug\netcoreapp3.1\interfaces.csproj.CoreCompileInputs.cache
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\CSharp_Oct2020_GitHub\interfaces\obj\Debug\netcoreapp3.1\interfaces.dll
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\CSharp_Oct2020_GitHub\interfaces\obj\Debug\netcoreapp3.1\interfaces.pdb
+C:\Users\nicho\Desktop\CodingDojo\ClassMaterial\CSharpOct2020\CSharp_Oct2020_GitHub\interfaces\obj\Debug\netcoreapp3.1\interfaces.genruntimeconfig.cache
