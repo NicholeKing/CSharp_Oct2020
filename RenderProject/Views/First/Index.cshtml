@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/static.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello from the first HTML page!</h1>
+        @{
+            for(int i = 1; i < 10; i++)
+            {
+                <p>Hello #@i</p>
+            }
+        }
+
+        <ul>
+            @{
+                for(int j = 1; j < 5; j++)
+                {
+                    <li>Hello #@j</li>
+                    <ul>
+                        @{
+                            for(int k = 1; k < 4; k++)
+                            {
+                                <li>World #@k</li>
+                            }
+                        }
+                    </ul>
+                }
+            }
+        </ul>
+        <form action="formmethod" method="post">
+            <input type="text" name="TextField"/>
+            <input type="number" name="NumberField"/>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
