@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "My First MVC";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to my project!</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <form action="PostMethod" method="post">
+        <label for="Name">Name</label>
+        <input type="text" name="Name">
+        <label for="Email">Email</label>
+        <input type="text" name="Email">
+        <label for="Password">Password</label>
+        <input type="password" name="Password">
+        <input type="hidden" name="hiddenValue" value="20">
+        <input type="submit" value="Submit" class="btn btn-primary">
+    </form>
+</div>
