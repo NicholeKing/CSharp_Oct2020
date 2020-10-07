@@ -1,0 +1,35 @@
+﻿@model CampingTrip
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="col-5" asp-action="Submit" asp-controller="Home" method="post">
+        <label asp-for="Name"></label><br>
+        <span class="alert-danger" asp-validation-for="Name"></span>
+        <input asp-for="Name" value="@ViewBag.Name"><br>
+
+        <label asp-for="StartDate"></label><br>
+        <span class="alert-danger" asp-validation-for="StartDate"></span>
+        <input asp-for="StartDate" value="@ViewBag.StartDate"><br>
+
+        <label asp-for="EndDate"></label><br>
+        <span class="alert-danger" asp-validation-for="EndDate"></span>
+        <input asp-for="EndDate"><br>
+
+        <label asp-for="Location"></label><br>
+        <span class="alert-danger" asp-validation-for="Location"></span>
+        <input asp-for="Location"><br>
+
+        <label asp-for="BearProtection"></label><br>
+        <span class="alert-danger" asp-validation-for="BearProtection"></span>
+        <input asp-for="BearProtection"><br>
+
+        <input type="submit" value="take a trip!">
+    </form>
+</body>
+</html>
