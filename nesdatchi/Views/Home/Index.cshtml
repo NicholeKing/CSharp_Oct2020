@@ -1,0 +1,24 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to Dreamland</h1>
+    <h4>
+        Fullness: @ViewBag.Fullness
+        Happiness: @ViewBag.Happiness
+        Meals: @ViewBag.Meals
+        Energy: @ViewBag.Energy
+    </h4>
+    <br>
+    <br>
+    <i class="nes-kirby"></i>
+    <br>
+    <br>
+    <h4>@ViewBag.Reaction</h4>
+    <br>
+    <a href="/feed" class="nes-btn is-primary">Feed</a>
+    <a href="#" class="nes-btn is-error">Play</a>
+    <a href="#" class="nes-btn is-success">Work</a>
+    <a href="/sleep" class="nes-btn is-warning">Sleep</a>
+</div>

@@ -11,8 +11,6 @@ namespace partialsSession.Controllers
 {
     public class HomeController : Controller
     {
-        public static List<Donut> AllDonuts = new List<Donut>();
-        public static List<Drink> AllDrinks = new List<Drink>();
         public static AllModels allmodels = new AllModels();
 
         [HttpGet("")]
