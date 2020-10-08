@@ -1,0 +1,34 @@
+@model AllModels
+<h2>Add a Drink</h2>
+<form action="addDrink" method="post">
+    <div class="form-group">
+        <label for="Name">Drink Name</label>
+        <input class="form-control" type="text" name="Name">
+    </div>
+    <label for="isFilled">Is hot</label>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="isHot" value="true">
+        <label class="form-check-label" for="isHot">Yes</label>
+    </div>
+    <div class="form-check">
+        <input class="form-check-input" type="radio" name="isHot" value="false">
+        <label class="form-check-label" for="isHot">No</label>
+    </div>
+    <input type="submit" value="Submit" class="btn btn-primary">
+</form>
+<hr>
+<table class="table table-bordered">
+    <tr>
+        <th>Name</th>
+        <th>Is Hot</th>
+    </tr>
+    @{
+        foreach(Drink d in Model.AllDrinks)
+        {
+            <tr>
+                <td>@d.Name</td>
+                <td>@d.isHot</td>
+            </tr>
+        }
+    }
+</table>
