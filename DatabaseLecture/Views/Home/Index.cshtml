@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model User
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <form asp-action="postmethod" method="post">
+        <label for="Name">Name</label>
+        <span asp-validation-for="Name" class="text-danger"></span>
+        <input asp-for="Name">
+        <label for="Email">Email</label>
+        <span asp-validation-for="Email" class="text-danger"></span>
+        <input asp-for="Email">
+        <label for="Age">Age</label>
+        <span asp-validation-for="Age" class="text-danger"></span>
+        <input asp-for="Age">
+        <input type="submit" value="Submit">
+    </form>
+    <h2>All the users</h2>
+    <table class="table table-bordered">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+        </tr>
+        @{
+            foreach(User u in ViewBag.AllUsers)
+            {
+                <tr>
+                    <td>@u.Name</td>
+                    <td>@u.Email</td>
+                    <td>@u.Age</td>
+                </tr>
+            }
+        }
+    </table>
+</div>
