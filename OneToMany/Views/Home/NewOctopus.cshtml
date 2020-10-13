@@ -1,0 +1,41 @@
+@model Octopus
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Make a new Octopus</h1>
+    <form asp-action="SaveOctopus" asp-controller="Home" method="post">
+        <div class="form-group row">
+            <label asp-for="Name" class="col-sm-2 col-form-label"></label>
+            <span asp-validation-for="Name" class="alert-danger"></span>
+            <div class="col-sm-10">
+                <input asp-for="Name" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Hat" class="col-sm-2 col-form-label"></label>
+            <span asp-validation-for="Hat" class="alert-danger"></span>
+            <div class="col-sm-10">
+                <input asp-for="Hat" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Ink_Amount" class="col-sm-2 col-form-label"></label>
+            <span asp-validation-for="Ink_Amount" class="alert-danger"></span>
+            <div class="col-sm-10">
+                <input asp-for="Ink_Amount" />
+            </div>
+        </div>
+
+        
+        <input type="submit" class="btn btn-primary" />
+    </form>
+</body>
+</html>

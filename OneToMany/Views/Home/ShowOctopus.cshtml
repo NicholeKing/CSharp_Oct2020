@@ -1,0 +1,23 @@
+@model Octopus
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="/img/octohat.jpg" alt="very cute" style="height: 300px;" />
+    <h1>@Model.Name</h1>
+    <p>Hat: @Model.Hat</p>
+    <p>Ink: @Model.Ink_Amount</p>
+
+    <h1>Tentacles:</h1>
+    <ul>
+        @foreach(Tentacle tent in @Model.Tentacles){
+            <li>@tent.Name</li>
+        }
+    </ul>
+</body>
+</html>

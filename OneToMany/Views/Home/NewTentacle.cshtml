@@ -1,0 +1,61 @@
+@model Tentacle
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Make a new Octopus</h1>
+    <form asp-action="SaveTentacle" asp-controller="Home" method="post">
+        <div class="form-group row">
+            <label asp-for="Name" class="col-sm-2 col-form-label"></label>
+            <span asp-validation-for="Name" class="alert-danger"></span>
+            <div class="col-sm-10">
+                <input asp-for="Name" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Num_Suction_Cups" class="col-sm-2 col-form-label"></label>
+            <span asp-validation-for="Num_Suction_Cups" class="alert-danger"></span>
+            <div class="col-sm-10">
+                <input asp-for="Num_Suction_Cups" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Has_Boxing_Glove" class="col-sm-2 col-form-label"></label>
+            <span asp-validation-for="Has_Boxing_Glove" class="alert-danger"></span>
+            <div class="col-sm-10">
+                <input asp-for="Has_Boxing_Glove" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="Length" class="col-sm-2 col-form-label"></label>
+            <span asp-validation-for="Length" class="alert-danger"></span>
+            <div class="col-sm-10">
+                <input asp-for="Length" />
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label asp-for="OctopusId" class="col-sm-2 col-form-label"></label>
+            <span asp-validation-for="OctopusId" class="alert-danger"></span>
+            <div class="col-sm-10">
+                <select asp-for="OctopusId">
+                    @foreach(Octopus oct in ViewBag.AllOctopi){
+                        <option value="@oct.OctopusId">@oct.Name</option>
+                    }
+                </select>
+            </div>
+        </div>
+
+        
+        <input type="submit" class="btn btn-primary" />
+    </form>
+</body>
+</html>
