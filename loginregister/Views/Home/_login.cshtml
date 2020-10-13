@@ -1,0 +1,16 @@
+@model LUser
+
+<form asp-action="Login" method="post">
+<div class="form-group">
+    <label for="LEmail">Email</label>
+    <input asp-for="LEmail" class="form-control"/>
+    <span asp-validation-for="LEmail" class="text-danger"></span>
+</div>
+<div class="form-group">
+    <label for="LPassword">Password</label>
+    <input asp-for="LPassword" class="form-control"/>
+    <small>Password must be at least 8 characters</small>
+    <span asp-validation-for="LPassword" class="text-danger"></span>
+</div>
+<input type="submit" value="Submit" class="btn btn-primary">
+</form>
