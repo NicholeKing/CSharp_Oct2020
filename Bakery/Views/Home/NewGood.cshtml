@@ -1,0 +1,50 @@
+@{
+    ViewData["Title"] = "Goods Page";
+}
+@model Good
+<div class="text-center">
+    <h1 class="display-4">Let's bake!</h1>
+    <div class="row">
+        <div class="col-sm-5">
+            <h2>All the goods</h2>
+            @{
+                foreach(Good g in ViewBag.AllGoods)
+                {
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <img src="@g.Photo" alt="@g.GoodName" width="175px">
+                        </div>
+                        <div class="col-sm-8">
+                            <br>
+                            <h5>@g.GoodName</h5>
+                            <p>Calories: @g.Calories</p>
+                        </div>
+                    </div>
+                    <hr>
+                }
+            }
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-5">
+            <h2>Bake me something</h2>
+            <form asp-action="CreateGood" method="post">
+                <div class="form-group">
+                    <label for="GoodName">Good Name</label>
+                    <input asp-for="GoodName" class="form-control"/>
+                    <span asp-validation-for="GoodName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Calories">Calories</label>
+                    <input asp-for="Calories" class="form-control"/>
+                    <span asp-validation-for="Calories" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Photo">Good Photo</label>
+                    <input asp-for="Photo" class="form-control"/>
+                    <span asp-validation-for="Photo" class="text-danger"></span>
+                </div>
+                <input type="submit" value="BAKE" class="btn btn-info">
+            </form>
+        </div>
+    </div>
+</div>

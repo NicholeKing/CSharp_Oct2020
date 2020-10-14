@@ -1,0 +1,30 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Shop
+<div class="text-center">
+    <h1 class="display-4">Welcome to the Bakery!</h1>
+    <div class="row">
+        <div class="col-sm-5">
+            <h2>All the shops</h2>
+            @{
+                foreach(Shop s in ViewBag.AllShops)
+                {
+                    <h5><em><a href="/Shop/@s.ShopId">@s.ShopName</a></em></h5>
+                }
+            }
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-5">
+            <h2>Add the shops</h2>
+            <form asp-action="CreateShop" method="post">
+                <div class="form-group">
+                    <label for="ShopName">Shop Name</label>
+                    <input asp-for="ShopName" class="form-control"/>
+                    <span asp-validation-for="ShopName" class="text-danger"></span>
+                </div>
+                <input type="submit" value="Add Shop" class="btn btn-info">
+            </form>
+        </div>
+    </div>
+</div>
