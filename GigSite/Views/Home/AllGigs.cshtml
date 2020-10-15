@@ -1,0 +1,7 @@
+<h1>Find a service</h1>
+@{
+    foreach(Gig g in ViewBag.AllGigs)
+    {
+        <p><a href="/gig/@g.GigId">@g.Title $@g.Price</a></p>
+    }
+}

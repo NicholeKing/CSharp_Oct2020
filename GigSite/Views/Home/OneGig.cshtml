@@ -1,0 +1,13 @@
+<h1>@ViewBag.OneGig.Title</h1>
+<h2>Price: $@ViewBag.OneGig.Price</h2>
+<p>Description: @ViewBag.OneGig.Description</p>
+<p>Delivery time: @ViewBag.OneGig.DeliveryTime</p>
+<form action="/OrderGig" method="post">
+    <div class="form-group">
+        <label for="Request">Requests:</label>
+        <input type="text" class="form-control">
+    </div>
+    <input type="hidden" name="GigId" value="@ViewBag.OneGig.GigId">
+    <input type="hidden" name="UserId" value="@ViewBag.User">
+    <input type="submit" value="Order!" class="btn btn-success">
+</form>

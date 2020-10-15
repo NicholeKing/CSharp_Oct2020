@@ -1,0 +1,56 @@
+<h2>Welcome @ViewBag.LoggedIn.UserName</h2>
+<div class="text-center">
+    <h3>My Gigs</h3>
+    @{
+        foreach(Gig g in ViewBag.LoggedIn.Commissions)
+        {
+            <p><a href="Edit/@g.GigId">@g.Title -> $@g.Price</a></p>
+        }
+    }
+    <a href="/AddGig" class="btn btn-info">+ Gig</a>
+    <hr>
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>Gigs I Ordered</h3>
+            <table class="table table-bordered">
+                <tr>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Order Date</th>
+                    <th>Action</th>
+                </tr>
+            @{
+                foreach(OrderHistory g in ViewBag.Orders)
+                {
+                    <tr>
+                        <td>@g.Gig.Title</td>
+                        <td>$@g.Gig.Price</td>
+                        <td>@g.Gig.CreatedAt</td>
+                        <td><a href="/delete/@g.OrderId">Cancel Order</a></td>
+                    </tr>
+                }
+            }
+            </table>
+        </div>
+        <div class="col-sm-6">
+            <h3>My commissions</h3>
+            <table class="table table-bordered">
+                <tr>
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Order Date</th>
+                </tr>
+            @{
+                foreach(OrderHistory h in ViewBag.Commissions)
+                {
+                    <tr>
+                        <td>@h.Gig.Title</td>
+                        <td>$@h.Gig.Price</td>
+                        <td>@h.Gig.CreatedAt</td>
+                    </tr>
+                }
+            }
+            </table>
+        </div>
+    </div>
+</div>
