@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model Platform
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div class="row">
+        <div class="col-sm-5">
+            <h2>Add a Platform</h2>
+            <form asp-action="AddPlatform" method="post">
+                <div class="form-group">
+                    <label for="PlatformName">Platform Name</label>
+                    <input asp-for="PlatformName" class="form-control">
+                    <span asp-validation-for="PlatformName" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label for="Company">Platform Company</label>
+                    <input asp-for="Company" class="form-control">
+                    <span asp-validation-for="Company" class="text-danger"></span>
+                </div>
+                <input type="submit" value="Add Platform" class="btn btn-primary">
+            </form>
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-5">
+            <h2>All the platforms</h2>
+            @{
+                foreach(Platform p in ViewBag.AllPlats)
+                {
+                    <p><a href="/Platform/@p.PlatformId">@p.PlatformName</a></p>
+                }
+            }
+        </div>
+    </div>
+</div>
